@@ -27,6 +27,7 @@ html {
 
 /*****************/
 /* CURSOR RESETS */
+/* Thanks Tim: https://gist.github.com/murtaugh/5247154 */
 /*****************/
 html,
 body {
@@ -36,6 +37,11 @@ body {
 code {
 	cursor: text;
 }
+
+/* 
+	textarea and input[type="text"] already receive 
+	"cursor: text" via browsers' base stylesheets 
+*/
 
 a,
 label,
@@ -80,7 +86,8 @@ b {
 /*****************/
 img,
 object,
-embed {
+embed,
+svg {
 	max-width: 100%;
 	height: auto;
 }
